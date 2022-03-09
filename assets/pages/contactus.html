@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact us | The Dress Store </title>
+    <link rel="shortcut icon" href="../../assets/img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Raleway:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <!--Header + navbar-->
+    <header>
+        <section class="header__fixed">
+            <div class="header__cuotas">
+                <p>12 CUOTAS SIN INTERÉS + ENVÍOS GRATIS NACIONALES A PARTIR DE LOS $30000</p>
+            </div>
+
+            <nav class="header__nav container">
+                <div>
+                    <a href="../../index.html"><img class="logo" src="../img/logo.png" alt="logo"></a>     
+                </div>    
+                <ul class="menu flex-row">
+                    <li class="menu__item"> <a href="../pages/daily.html">Daily</a></li>
+                    <li class="menu__item"> <a href="../pages/partynight.html">Party Night</a> </li>
+                    <li class="menu__item"> <a href="../pages/sizes.html">Sizes</a> </li>
+                    <li class="menu__item"> <a class="menu__visita" href="../pages/contactus.html">Contact us</a> </li>
+                </ul>
+            </nav>
+        </section>
+        <img class="header__portada" src="../img/portadahome.jpg" alt="portadadialy">
+    </header>
+
+    <main>
+        <!--Wpp boton section-->
+        <div>
+            <a class="boton__wpp" href="https://web.whatsapp.com" target="blank">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                  </svg>
+             </a>
+            </div>
+        
+        <!--Contact section-->
+        <section class="contact vestidos">
+            <h2 class="vestidos__titulo">Contact Us</h2>
+            <ul class="contact__logos">
+                <li>
+                    <a href="https://web.whatsapp.com" target="blank">
+                        <img class="contact__logos--iconos" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAABMhJREFUaEPtmo+RDUEQxvsiQASIABEgAkSACBABIkAEXASIABEgAkSACKif2q7q65ue6ZmdfU/dvanaurt3szP99df/pt8cyTkbR+cMrxwAn3XGDwwfGD5jGtilSd8UkYsict3o8LuI8DC+isivrfW7JeArInJHRO6KyK0kEMC/W55PyXe6pm0BGHBPO0BGAsP2SxF5NZP5mYAB+sKZbJf2g8mw/kxEjmcsNgMwfgmjjysC/RaRjyLyZZnDTxhUU2cNfr9WWYN3bq9ley1gAtDrgFVAvln8EbCZgd8D/IGIEOT8QEmAVsVl1jwxZw1gwH5YIq9dFKD4Hs+aqAtwFHbZoWLNJ8v/dgY4Avt+YWcNUA8CVyE2+PFwBPQIw5jd5wKzaB1WtxiwTbq6YBYfMu8RwIC1xQMmjM8h0JaDPTFxG9gAfcMUL839ewGTHojIdgyZVlOy8gSsi4BlmeZvQKdGD2A2++ZWfb7kyNRmkybBNFY2pPQewERkWyISoCgbSwOhKCsxOSql2cMHMva5mskKWcAABbAdbKCFv/3cm/1WVoApW39O7ZMFTLC4b1BR5hGo/IDxt+5DlIJyZg9PAixfam2SAUzZ99MtxMKlXOsjuL52b6MoTgVnK7LmPhnAMEn5qCPy3ZJi9B0EoyScPbxsxItaTZ/qWnpzjtJQyc8zPr9GCV7JTffJMEwqIiXpiMy5BbhpboPIffAiJ4eHiwzgP0YQuhBR96Jm0rRvbHU2iK34ms8KuE54OmsB9km+BhhpvLb5jNITC5l5oLDIPeCqJbUAezON0pEK4IMInzcDyUq6fSqs5uNewJnk7lnuLvA7FeBJ2TngUq3bVeD/T4BbPqyylg7tpDdS2uzh3WgVw56tHqY4H3OAsKMFmuBGtO/pWfmgVW1EtHwYYW1a4u/MO8xDcNKD70TyGZHUR23bSWEOTGWaf3RZHhmtrkpLpVQTFR4lU41AAxZm9OjIPE5jPldngGcLo3/yZdjKlpaRb0agma9frcBudLZmXmSmvinxw1WFp2TKAPZ5rsePdUNAozjv09kAFgUiHxybOT8DGKEwQdtHqvpJBQUCYsp2rQzoaD9vztU6OmvSzPNmvea4hxkC2jYUaqCjVOjTUdOcewCXGnhRiyfDGHMUOC4TMR419nERmg32FJfqnmZNusRyrYmXBa3z9DtkjdLECfJ4lJZ87k2x28Mwc32AyNTVvcAz80sHlPRZu4dhXzmNBq4MqGhO6TutbLmbzsO6OY08fIfBGVd/XwOg590S2O6zdpZhfwSb6b8Z0CUzBixy9dTdqUoLgbIFOoUF7ZxSgz4DzM+p3S5I+61dNMuw7zdrSqInjJb10bXJ21Q9Xdo3ggGUAwGB0rsOzBLVMweLU0rOAC415whggGz5MUIBPnshxV5zsjlWBSf9AHZUkSmTLn19MmKeeglNL7ToGgDjISjVFDjldkGGYV9WRmDRPqBKl1FGFGRZJWgNmbDfOAPYF+i6hl5FQhB7JQm2EJDHX0jpAU5+Rdk800YLsK+hEQJw+HDGj3AHgGOqGeYxW11/VqQ/oawWYATGt5TFGZrWby5QpoKyl0xn7BGu0QK86eb7WPwAeB9a3+WeB4Z3qe197HVgeB9a3+WefwFopBhMlfGjWgAAAABJRU5ErkJggg=="/>                             
+                    </a>
+                        <p class="contact__texto">+54 9 11 23604138</p>  
+                </li>
+
+                <li>
+                    <a href="https://www.google.com/maps/place/El+Salvador+4685,+C1414+CABA/@-34.5895362,-58.4269149,15z/data=!4m13!1m7!3m6!1s0x95bcb587965298f3:0x3071de9b2b1be85d!2sEl+Salvador+4685,+C1414+CABA!3b1!8m2!3d-34.589422!4d-58.4268104!3m4!1s0x95bcb587965298f3:0x3071de9b2b1be85d!8m2!3d-34.589422!4d-58.4268104" target="blank">
+                        <img class="contact__logos--iconos" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAArFJREFUaEPt2tFx1DAQBuA/FRAqgA5IByEVBCoIVBCoAKiApAKgApIKgA6gg1ABdEDmZ6wZ42i1K1m7pyPWyz1YkvV5V/Z57w5wz9rBPfNiA//vEd9VhA+nC/s7+gLvAvwGwNsJys93keho8AcALxbAjwBeRqEjwTlscoaho8AlbCg6AmzBhqG9wTXYELQnuIT9NOnOhJuV2572AmvYdKcmLBTtAbZi5ykchu4NrsWGo3uCW7Gh6F7gtdgwdA9wL2wIei24N9YdvQbshXVFt4K9sW7oFnAU1gVdC47GdkfXgHeF7Yq2gneN7Ya2gEfBdkFrYO19VhvvVar6U5i4+GpZWrCG5Tk18GMATwAcAfgO4AeAm8ViLX2WvhKYfUW0tOBXAN4bwlMCswTLkuyyzUuzlj65ZWhgjnkN4GI5WFrwLwCpWF5yS+OvAJwWBjLabIy81DjHc+GgBcwi/0MrmGn3qDHCzwB8Noy1dCGY8NqUZv+fALhd/mlShFiC4R7WWm78VwDH2kDj8W8AnjaCWdznXjaBU7oxWqnl9mMOzFR6YARp3bJpCSCX0vOfbJgVaduYwZY08gZn01IAa0+Mvx5Tp0meu6reKX0NYJ5lKQjWtdzJIA8w99wXLVeNx08A8J7Qmm0hYJ6Ez79zI0rqdgmA3wdybagIpwWWiuzateAvE8ufVedjhgRzgS1oDct5hwXXoi3Y4cFWtBW7F2ANXYPdG7CErsXuFXiJbsHuHTih+Vl69JQeXUPfpbVnbsvxDWx9L/D4Lt0SsdoxW4S3CAs5szala1PRs7/JYuo0rbJnrao3XCoU3DlPDbhnNbI3WCoUrAJzsFQ47w2omY/Fu/T/a3VcTYTTZCzh8AS9SrHqIoUOLOFyHbkSkDhnC7h1gUOM28BDhMFxEVuEHS/uEFPfAkjqtD0skOzRAAAAAElFTkSuQmCC"/>
+                    </a>
+                        <p class="contact__texto">El Salvador 4685 - Palermo Viejo</p>
+                </li>
+
+                <li>
+                    <a href="https://www.gmail.com" target="blank">
+                        <img class="contact__logos--iconos" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAklJREFUaEPtmmFRxDAQhd8pAAfgACSAAsABKAAUAAoABYACQAE4AByAA1AA82bamZImzSZNekm7+dWZS9v99r1ksntdYWFjtTBeKPDcFVeFVeGZZUAtPTNBeziqsCo8swz4LL0J4BTAXsP9BOABwHdBeWB8u008rwCeh+IbAj4EcAeA0N1B2BMAhF/noAiMb9sI4hPAEYB3W3AuYGbszUNzA+B8TcRUle93DYqyb4N2AVO9AwEMLcRsTmVxuu0awLEgNi693jwX8K/gge0UwhKa8DkHXUcLt+tV8q4eXwrg9sWXAK4kUUTMoVJU1txPfI/KCsyXp7Y4AakqN9CYkR2YQaWyOK37aNmFQ8AnAU5hcd8uLIWeFDjG4mMtbCZicuAQi6ewcBHAEounsnBRwDaLp7ZwccBdi/PadhaWbkiSeWtZw5LAcs1R4JRHy1wqjXmuKlybwj8ANgIkz6IwK6S2FRQQS/DU26bL8hJwZzZgloasaO4DFZDETlVZHrIpwbZOMcAMnv0lBrYjIRHM+WgSyT4VR3HALQP7TTwujhm08JnxgGKBGWesxbsWNhNWNHCMxU0LVwccYnGbhasFHrL4kIWrBrZZ3Gfh6oG7Fue1uQv7dvXiNy0fQOjvCuzJWNajZahaMfNVYVX4fwbU0q4GAKuTLeEiYz3M8nCKEbKGv2z/S7mACXAhJCgV2BqXC5gdDB4KWHj7lC4NmMqyEcEStfdlgu8rHqHI9UxT4Hq0iotUFY7LWz13qcL1aBUXqSocl7d67lqcwn+AypY9bVxRYwAAAABJRU5ErkJggg=="/>
+                    </a>
+                         <p class="contact__texto">tds@store.com</p>
+                </li>
+        </ul>
+        </section>
+
+        <section>
+            <!--Form section-->
+            <form class="form">
+                <fieldset class="form__fielset">
+                    <hr class="form-fielset--decorativeline">
+                    <input class="form__fielset--input" type="text" name="nombre" value=""
+                        placeholder="Escribí tu nombre">
+                    <input class="form__fielset--input" type="email" name="email" value=""
+                        placeholder="Escribí tu mail">
+                    <input class="form__fielset--input" type="number" name="telefono" value=""
+                        placeholder="Escribí tu teléfono">
+                    <input class="form__fielset--input" type="text" name="asunto" value=""
+                        placeholder="Escribí el asunto">
+                    <textarea class="form__fielset--input form__fielset--textarea" name="mensaje" id="mensaje" cols="30" rows="10"
+                        placeholder="Escribí tu mensaje"></textarea>
+
+                <section class="form__options">
+                    <p class="form__fielset--texto">Consumidor:</p>
+                    <select class="form__fielset--selection" name="Consumidor">
+                        <option value="selection"></option>
+                        <option value="min">Minorista</option>
+                        <option value="may">Mayorista</option>
+                    </select>
+                <section >
+                    <label class="form__fielset--texto" >Recibir Newsletter</label>
+                    <input class="form__fielset--checkbox" type="checkbox" name="acepta" value="1">
+                 </section>
+                </section>   
+                    <input class="form__fielset--boton" type="reset" value="Limpiar">
+                    <input class="form__fielset--boton" type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </section>
+
+         <!--Video section-->
+        <section class="video">
+            <h3 class="video__titulo">Te responderemos a la brevedad</h3>
+            <video class="video__video" src="../img/videocontact.mp4" controls width="800"></video>
+        </section>
+
+        <!--Social media section-->
+        <section class="redes">
+            <h3 class="redes__titulo">Seguinos en nuestras redes y no te pierdas ninguna novedad!</h3>
+            <ul class="redes__logos">
+                <li class="redes__titulo--iconos"> <a  href="https://www.facebook.com" target="blank">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAApdJREFUaEPtmeFVFTEQhS8VqBWoFagVgBWIFSAVgBUoFaAVKBVgB0IFaAVCB1KBnu+cXc++bJKZZPJ+PA/583jsJvn2ZuZmNm9PO9j2dpBZD9CLVXsp6ZGke0k/Rq/mCKUBfCPpUBJ/lxrwXyVdRx8kAn0k6aOkZx1K3k59Lzr6dsU0ip53wqaMwL+X9K0FvlXpL5LetUzgvJewOXbe61b6saTvRsx656zF/GtJv62BPEoDfDMoHCwektUE90ADXHMFC6T1OuCvap0s6GgM4w5Xkkg4PmkHi88PBbhqjNegcYnLVpmm++8m365tLMCTJ6X2tuQqNehfnXHMLkg4oW6tWdD0f54boASNrREaPQ3rYnmtZkHTPztWCbpXZSZ64rGtKbZr4cFYWbVz0CwtjtHTqCvmREv7kyMnleul+XCSjdzIQVNPlLLaehDcIrdjekKhNDbb/KflxRx0xJfPpkIoBYgIsfLtHPQfS87K9W1AM90G538BHUlCFNmW0hvJmCrdkjDseqkfs1XP2/Uyihg3dRW+7ztDkSLq37gR6Jq9eVhakrOqNJN5EzEKjXJepYclYhS6xVpNaHzxhWN9o9DeFf2Z1vORHTEC3eJSK0caXXtsw/JctcdcXT11hEh6y2hobHV1rjK6nh4N3VRP96o9Ejqr8qoQSda65x1xJHTXOyLPQB1L4e5to6A/SzotTWodIXBQw87l8e1RBRO+TF1SPGmyoAFpAY8qbQJbMb1cHS94BNoF3AI9K05lVovxXmhimLHNw8dW6Fl5XIU6mp8nopsLtsaLcK4GLya/J6ZLnZkMdZY7p1dpYOnrOdRZzR+Bngej+EF9Mh7FgEkb/5uvc+of+vFoBLTXw4fd9wA9TEpjoJ1U+i9HqZcu21sdZgAAAABJRU5ErkJggg=="/>
+                </a>
+                </li>
+            
+                <li class="redes__titulo--iconos">
+                    <a href="https://www.pinterest.com" target="blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAshJREFUaEPtmIGxDjEUhc+rABWgAlSAClABKkAFqAAV8DqgAlSAClABKmC+mY25zmQ3uZu8N/6ZPzNv/nm7m+yXc0/uTfZEB9hODpBZR+jzitpR6UXpK5Ium+rfJX2bFYlZSt+SdF/SXUkXV+B+Snq7/L0bmcAoNLBPJfGbaaj+UNKHTKfy7F5o1AT28Z6Xhj4vJT3JjrEHGuD3kq5XfAsE6n0O93ieSGAdLOTtVXbyWega8C9JzyQB3GpM9I2ka/YgVuF6V8tCA/YojAwwKkZlWy9m4kTDwa/2ZpgMNKnsqxHdSAKX7rWxTiU9aM2Y+xlowhc9+XyxRXkPCr6QBBDpjftbESD93QmQ9Lk0G/q32aLAlcsAxpADQcj5rTUyD5OM7XZPGuxVGt+SMUqjOJANSiOsrytkWxA+Jt1Jf80F3QvtUG4NFtbNCdA+bjVEvdCkNIpJafeWclz+j9aJL9paqDWlzxTaw16DZpOE79dazVJT7eGq+OC+CAFtVTqPHn2mLkTS2Y8gGR7mBaV50eG6W8gVr60DUt5atvnbv9fTdHA1oyquGpVybYvKWC4C175U9jNDC5HO7sGotheKj43tas3PLTvtUppOMaQRjJBeCLK0sgD7aT/dnMneo4QV/1LOCxg7t08Wxy2lawvQi9VG0sntPeJApLJy5quV47VMULMF/mfi3WfIzEJcm737OT5XDgVAkTZrx7LUXprBZ0C7n1Eu+nsr1F3FxAcYha75mVSIwr7Jj++mWmIropRuo9Du55ifuYeHCzz3yD6Adh+tajMahfaDQSoLpCVeOoxCeyne5dEs/Ci07+66C0QWND4/E7q1FR3h/KfvCLRvV1ul+7+DJjP4QXca5Mw8Hb9dnJvKMyoiC7F7HzxL+hFPw0AJz34WG2YfhaaMZ77jDQPPsMcUiOwgo0pn3zfl+SP0FBk7BjlIpf8AgTiVLhz5u0IAAAAASUVORK5CYII="/>
+                    </a>
+                </li>
+
+                
+                <li class="redes__titulo--iconos">
+                    <a href="https://www.instagram.com" target="blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAA0dJREFUaEPtmMuuDlEQhdd5AjwBZy7BC7jEVIKpSFxeAEMDwRmZYSoRDMQQA2M8AWYSicsT4AnIl1Qlddq+VPfffZI//j05OX/3rl577bVXVe0treHYWkPM2oDeq13775g+KmnfCuz+lvRxyvyxTF+TdFkSgOcaAH8q6WE2YBb0SUlPJB3KBp7w3ndJVyS9683NgL4j6XYh0Pvw26/kVrPouPAThbh3JfHN6uiBhuG3YTZAH0h61WMj+Xy/pHMWM56PUy3Ge6C/BWaemZ6TeEa9Bnh0fdZmIZXtWoQW6OuS7ttEGIb1OcdpScclfZb0QhLAAeuM37Ad+OebLdAfgks0t2vCSq5KemzzvkhCx89tJznwDFzlWCl2C/Qfm4CfwsLYwYGDudLYkXQrPLgn6aZJEUn6KOKrgY4HMCsNQOIy/I1SwsJgDR/2RVwwZh3cGUlv7B+cyCVS3OG5QKN/ALd2BDBYmSeRi5IOS/oq6VFgl0W6FU4G3fNN7M9PfUZCvH++8eLioKPDgOOTscmHYRbmkQoMHwlAq85g/rwY02gXh3FJ9HwcH74UdIszlA5qZLq4yxlN1+QRQcBwpojiQDrjaJudGo7JoGO9UQMdg6PRTGonZb80lDVXmgw6Wl4NtPs4GHrlgLOJlH52fHgx0Oi5mwQqDhEXS30x1PVioMGzdkwDei01Hd2jWtwMJDLWPYp+vorloWtAeJ3AImiXaiMukiIMi+z59CJpfJgRWQR2iZ15RiS78Vv08cUzYi0JOKNja4/X1mLVdmSW2iNTmsI4bLbuQZAE79BjtsZk0GwldQUjA5r30DjgmRu7bOYjG8DWmoK4CJKP1zOjNB19GG0e6LBTetzqXGrhUkmrlX6jPWVriwlr2zWF2yvvEatFWLYbb7b0qyK1+UiC0sClUW0+WqCZDNsHLSg+i1Uhl7kH36L6897yh52N4rd61dnwhgnGOWzY1hwDsLRqHNLYXzbl2AMNsNpd3vCikF1p7QKuMmx8SxdAvQ4oXQcTHHm4VOZgeRgDH+cgdpuJDNMeHJaQBt1HbFJXXQD6hRAkkjovY0BHcCzAa4nStvcW4tLijGQSzq54U0H3QC36fAN6UXpD8A3Te8X0X3EX1i4wsidYAAAAAElFTkSuQmCC"/>
+                    </a>
+                </li>
+
+                <li class="redes__titulo--iconos">
+                    <a href="https://www.twitter.com" target="blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAnlJREFUaEPtmIEtBUEQhv9XASqgAzpABagAFaACdEAF6IAKUAE6oAJUQL7kNjn3dmdn996dvOQmkSd5uzP//PvvzOybaQlttoSYNYEe69QmpiemDQbGlseGpE1JW5KeJH1Iei89obFA70u6kbQaAQj44wj4wyYpvv9jFuhHSQeSvkqZaK0HJGABbRkxziR9Stpp1n83JzK3LwX6qAn2Kmm3B/ArSScVSQOYROdYxlcK9IWk8yZYLXAY47RKDcDsxZDIdVc6KdBkuN2KBnB0x6fXXlLHm3HAxeTCYkiG03Jp+rbJsrueEyBzj85/vNkl1hHnNPadRx7dfTCBswcDFCUNpmuNU4W4qKVAe4LCNo7vIrKp1TMgn1uaLgLN4q6uLdbQOkmwh5Og1M1p0Ul7L9AEBsCKM9iillWD5tgpV5QfLh+tdyzjrpjNqOYiDg3+siEqGSfXEYcGGPPP6HBvBbZmD/S8/g+o13J9wALdp2zV5vrm6aK50TQMTrUgSvdF23bXSQ406wFOBRlaKlQqZo7siOABHQYn5AL4oYzOCkFZ84Au6YzZgIkFbpbZ7wE9xoXM1uZ2sh7QrE+NqrXMtve5KkYNaPbUPp2sxMI7sOhF7mU6BOZ2M0szuvJ/34rC+zP6DqztiNY+APPKDm+5GpmYg/4iQTOu8rqG7dhvGB7w5kvb48AjD1ilVsOqq44agbl0jJ1FGs51RNjDKX97nqyda2CXi7yQ5pRiGvAEgNk+L5cAFsDZ9uwkwNVcAvPIw1Mt+FGRisBMbM7FXpA5eeT8cAKUO4zPcBlD2QoP3JyfXt97LmKvAENsnkAPwWrM58T0xLTBwFLK4xd6w28uX8QHzQAAAABJRU5ErkJggg=="/>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!--Footer section-->
+    <footer>
+        <h4>The Dress Store</h4>
+        <p class="pfooter">Copyright 2022 © The dress store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+   
+
+</body>
+
+</html>
