@@ -240,6 +240,7 @@ span {
 /*Social media section*/
 .redes {
     background-color: var(--secundario);
+    background-image: linear-gradient(to top, #968580, #af9d97, #c9b6af, #e3cfc8, #fee9e1);
 }
 
 .redes__titulo {
@@ -694,6 +695,8 @@ h4 {
     }
 }
 
+
+/*Animaciones section*/
 .zoom {
     transition: transform .2s; 
 }
