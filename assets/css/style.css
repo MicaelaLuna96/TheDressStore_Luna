@@ -20,7 +20,6 @@
     box-sizing: border-box;
 }
 
-
 /*Globals*/
 html {
     font-size: 62.5%;
@@ -34,6 +33,7 @@ body {
 
 ul {
     list-style-type: none;
+    margin-left: -2rem;
 }
 
 a {
@@ -47,17 +47,11 @@ a:hover {
     color: var(--font-colorprimario);
 }
 
-img {
-    width: auto;
-}
-
-
 /*Helpers*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 /*Header + navbar section*/
 header {
@@ -74,50 +68,45 @@ header {
 .header__cuotas {
     color: var(--font-colorsecundario);
     background-color: var(--principal);
-    font-size: 1.4em;
+    font-size: 1.3em;
     text-align: center;
-    font-family: var(--font-principal);
     padding: 0.1rem;
 }
-
 
 .header__nav {
     color: var(--font-colorsecundario);
     background-color: var(--terciario);
-    min-height: 13vh;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: flex-end;
     max-width: 100%;
+    margin-top: -1rem;
 }
-
 
 .logo {
-    padding-bottom: 1.2rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
 }
-
 
 .flex-row {
     display: flex;
     flex-direction: row;
 }
 
-
 .menu {
     flex-basis: 50%;
     justify-content: space-between;
-    align-items: center;
     font-size: 2.3em;
+    align-items: baseline;
 }
-
 
 .menu__item {
     text-shadow: var(--text-shadow);
-    padding: 1.7rem;
+    padding: 0.6rem;
     text-align: center;
+    white-space: nowrap
 }
-
 
 .menu__visita {
     color: var(--font-colorprimario);
@@ -130,21 +119,20 @@ header {
     margin-top: 5rem;
 }
 
-
 .carousel-item {
-    padding-top: 12rem;
+    margin-top: 10rem;
+    padding-top: 2rem;
 }
-
 
 /*Wpp boton section*/
 .boton__wpp {
     position: fixed;
+    z-index: 1000;
     bottom: 20px;
     right: 20px;
     background-color: #25D366;
     border-radius: 50%;
 }
-
 
 /*Vestidos section*/
 .vestidos {
@@ -169,30 +157,34 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    padding: 1rem;
 }
-
 
 .vestidos__modelo {
     background-color: var(--cuarto);
     border: 1px solid #BFBFBF;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
-    padding: 1rem;
-    margin: 2rem;
+    padding-top: 3.5rem;
+    margin: 3.5rem;
     color: var(--font-colorprimario);
     text-align: center;
-    line-height: 1.5rem; /*Boostrap*/
+    line-height: 1.5rem;
+}
+
+.vestidos__modelo--foto {
+    width: 75%;
 }
 
 .vestidos__modelo--seccion {
-    padding-top: 0.9rem;
+    padding-top: 1.3rem;
     font-size: 1.5em;
 }
 
 .vestidos__modelo--nombre {
     font-size: 2em;
     font-weight: bold;
-    padding: 0.5rem;
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .vestidos__modelo--precio {
@@ -209,7 +201,6 @@ span {
     text-decoration: line-through;
 }
 
-
 /*Video section*/
 .video {
     background-color: var(--secundario);
@@ -219,7 +210,7 @@ span {
 .video__titulo {
     color: var(--font-colorprimario);
     font-size: 2.5em;
-    font-weight: bold; /*Boostrap*/
+    font-weight: bold;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
@@ -232,7 +223,6 @@ span {
     width: 35%;
 }
 
-
 /*App section*/
 .app {
     background-color: var(--secundario);
@@ -242,7 +232,7 @@ span {
 .app__titulo {
     color: var(--font-colorprimario);
     font-size: 2.5em;
-    font-weight: bold; /*Boostrap*/
+    font-weight: bold; 
     padding-top: 2.5rem;
     padding-bottom: 1rem;
 }
@@ -255,7 +245,6 @@ span {
 .app__imagen {
     width: 35%;
 }
-
 
 /*Social media section*/
 .redes {
@@ -279,15 +268,53 @@ span {
 
 .redes__titulo--iconos {
     list-style-type: none;
+    padding-right: 1.9rem;
 }
-
 
 /*Sizes section*/
-.sizes__imagen {
-    display: grid;
-    justify-content: center;
+.sizes {
+    color: var(--font-colorprimario);
+    background-color: var(--principal);
 }
 
+.sizes__flex {
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sizes__tabla {
+    border: solid 1rem #968580;
+    border-radius: 5px;
+    border-collapse: collapse;
+    box-shadow: var(--box-shadow);
+    width: 50%;
+}
+
+.sizes__tabla--tr {
+    font-size: 2em;
+    line-height: 2.2;
+    border: none;
+}
+
+.sizes__tabla--color1 {
+    background-color: var(--secundario);
+}
+
+.sizes__tabla--color2 {
+    background-color: #D0C0BB;
+}
+
+.sizes__imagen {
+    width: auto;
+    max-height: 100%; 
+}
+
+.sizes__imagen--manequin {
+    height:500px;
+}
 
 /*Contact section*/
 .contact {
@@ -312,10 +339,7 @@ span {
     text-shadow: none;
 }
 
-
 /*Form section*/
-
-
 .form {
     color: var(--font-colorprimario);
     background-color: var(--principal);
@@ -353,7 +377,6 @@ span {
     font-family: var(--font-principal);
 }
 
-
 .form__fielset--textarea {
     font-family: #000;
     font-size: 1.8em;
@@ -390,7 +413,7 @@ span {
 .form__fielset--boton {
     background-color: var(--principal);
     border: none;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--text-shadow1);
     border-radius: 20px;
     font-size: 2em;
     width: 20%;
@@ -402,7 +425,6 @@ span {
 }
 
 /*Footer section*/
-
 h4 {
     color: var(--font-colorsecundario);
     background-color: var(--terciario);
@@ -419,6 +441,14 @@ h4 {
     font-size: 1.5em;
 }
 
+/*Animaciones section*/
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.05); 
+}
 
 /*Media queries*/
 @media screen and (max-width: 1200px) {
@@ -426,11 +456,8 @@ h4 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+        
     }
-}
-
-
-@media screen and (max-width: 1120px) {
     .sizes__tabla--tr {
         font-size: 1.6em;
         line-height: 2;
@@ -438,9 +465,15 @@ h4 {
     }
 }
 
-@media screen and (min-width:0px) and (max-width:767px){
-    /*Header + navbar section*/
+@media screen and (min-width: 768px) and (max-width: 830px) {
+    .carousel-item {
+        margin-top: 8rem;
+        padding-top: 10rem;
+    }
+}
 
+@media screen and (max-width:767px){
+    /*Header + navbar section*/
     .header__cuotas {
         font-size: 1.1em;
     }
@@ -459,6 +492,7 @@ h4 {
     .menu {
         font-size: 1.6em;
         display: flex;
+        flex-wrap: nowrap;
         align-items: center;
     }
 
@@ -468,16 +502,12 @@ h4 {
     }
 
     .menu__item {
-        padding: 1.1rem;
+        padding: 0.5rem;
         text-align: center;
-    }
-
-    .carousel-item {
-        padding-top: 17rem;
+        margin: 0 1rem;
     }
 
     /*Vestidos section*/
-
     .vestidos {
         padding: 1.5rem;
     }
@@ -496,14 +526,10 @@ h4 {
     }
 
     .vestidos__modelo {
-        padding: 1rem;
         margin: 1rem;
-        text-align: center;
         width: 60%;
-    }
-
-    img {
-        width: 100%;
+        line-height: 1rem;
+        padding-top: 2.5rem;
     }
 
     .vestidos__modelo--seccion {
@@ -513,7 +539,7 @@ h4 {
 
     .vestidos__modelo--nombre {
         font-size: 1.5em;
-        padding: 0.5rem;
+        padding-top: 1rem;
     }
 
     .vestidos__modelo--precio {
@@ -531,7 +557,6 @@ h4 {
     }
 
     /*Section Video*/
-
     .video__titulo {
         font-size: 1.6em;
         padding-top: 1rem;
@@ -558,7 +583,6 @@ h4 {
         width: 80%;
     }
 
-
     /*Social media section*/
     .redes__titulo {
         font-size: 1.5em;
@@ -567,14 +591,13 @@ h4 {
     }
 
     .redes__titulo--iconos {
-        width: 25px;
-        height: 35px;
-        padding-bottom: 1rem;
+        width: 10px;
+        height: 20px;
+        padding-bottom: 5rem;
+        padding-right: 7rem;
     }
 
-
     /*Sizes section*/
-
     .sizes__flex {
         padding-top: 0.5rem;
     }
@@ -590,13 +613,11 @@ h4 {
         text-align: center;
     }
 
-    .sizes__imagen {
-        width: 35%;
+    .sizes__imagen--manequin {
+        height:350px;
     }
-
-
+   
     /*Contact section*/
-
     .contact__logos {
         display: flex;
         justify-content: space-around;
@@ -611,7 +632,6 @@ h4 {
         width: 70%;
     }
 
-
     /*Form section*/
     .form-control {
         width: 20%;
@@ -625,7 +645,6 @@ h4 {
         width: 50%;
     }
 
-    /*
     .form {
         padding-bottom: 2rem;
     }
@@ -686,14 +705,12 @@ h4 {
         width: 35%;
         padding: 1rem;
         margin: 1.5rem 1rem;
-        box-shadow: none;
     }
 
     .form__wrap {
         display: flex;
         flex-wrap: wrap-reverse;
     }
-
 
     /*Footer section*/
     h4 {
@@ -705,12 +722,3 @@ h4 {
     }
 }
 
-
-/*Animaciones section*/
-.zoom {
-    transition: transform .2s; 
-}
- 
-.zoom:hover {
-    transform: scale(1.05); 
-}
