@@ -1,0 +1,94 @@
+.header {
+    background-color: $terciario;
+    margin-bottom: -4px;
+    &__fixed {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+    }
+    &__cuotas {
+        color: $font-colorsecundario;
+        background-color: $principal;
+        font-size: 1.3em;
+        text-align: center;
+        padding: 0.1rem;
+    }
+    &__nav {
+        color: $font-colorsecundario;
+        background-color: $terciario;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        max-width: 100%;
+        margin-top: -1rem;
+    }
+    &__portada {
+        width: 100%;
+        margin-top: 5rem;
+    }
+}
+
+.logo {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.menu {
+    flex-basis: 50%;
+    justify-content: space-between;
+    font-size: 2.3em;
+    align-items: baseline;
+    &__item {
+        text-shadow: $text-shadow;
+        padding: 0.6rem;
+        text-align: center;
+        white-space: nowrap
+    }
+    &__visita {
+        color: $font-colorprimario;
+        text-decoration: none;
+        font-size: 2.7rem;
+    }
+}
+
+.carousel-item {
+    margin-top: 10rem;
+    padding-top: 2rem;
+}
+
+/*Media queries*/
+@media screen and (max-width:767px){
+    
+    .header {
+        &__cuotas {
+            font-size: 1.1em;
+        }
+        &__nav {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+    }
+
+    .logo {
+        padding: 1rem;
+        width: 70%;
+    }
+
+    .menu {
+        font-size: 1.6em;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        &__visita {
+            font-size: 1.8rem;
+            text-decoration: none;
+        }
+        &__item {
+            padding: 0.5rem;
+            text-align: center;
+            margin: 0 1rem;
+        }
+    }
+}

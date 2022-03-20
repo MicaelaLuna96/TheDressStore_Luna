@@ -1,0 +1,194 @@
+.vestidos {
+    background: $principal;
+    padding: 4rem;
+    &__titulo {
+        color: $font-colorprimario;
+        background-color: $secundario;
+        box-shadow: $box-shadow;
+        font-size: 2.7em;
+        text-shadow: $text-shadow1;
+        text-align: center;
+        padding: 1.8rem;
+        margin-bottom: 3rem;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    &__conteiner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding: 1rem;
+    }
+    &__modelo {
+        background-color: $cuarto;
+        border: 1px solid #BFBFBF;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        padding-top: 3.5rem;
+        margin: 3.5rem;
+        color: $font-colorprimario;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    &__modelo--foto {
+        width: 75%;
+    }
+    &__modelo--seccion {
+        padding-top: 1.3rem;
+        font-size: 1.5em;
+    }
+    &__modelo--nombre {
+        font-size: 2em;
+        font-weight: bold;
+        padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    &__modelo--precio {
+        font-size: 2em;
+    }
+    &__modelo--cuotas {
+        font-size: 1.5em;
+    }
+}
+
+span {
+    color: #f94144;
+    font-size: 0.9em;
+    text-decoration: line-through;
+}
+
+/*Video section*/
+.video {
+    background-color: $secundario;
+    text-align: center;
+    &__titulo {
+        color: $font-colorprimario;
+        font-size: 2.5em;
+        font-weight: bold;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    &__video {
+        background-color: $font-colorprimario;
+        border: solid 1rem #B09E99;
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+        width: 35%;
+}
+}
+
+/*App section*/
+.app {
+    background-color: $secundario;
+    text-align: center; 
+    &__titulo {
+        color: $font-colorprimario;
+        font-size: 2.5em;
+        font-weight: bold; 
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    &__titulo--p {
+        font-size: 2em;
+        padding-bottom: 2rem;
+    }
+    &__imagen {
+        width: 35%;
+    }
+}
+
+
+/*Media queries*/
+@media screen and (max-width: 1200px) {
+    .vestidos__conteiner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width:767px){
+    .vestidos {
+        padding: 1.5rem;
+        &__titulo {
+            font-size: 1.7em;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+        &__conteiner {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+        }
+        &__modelo {
+            margin: 1rem;
+            width: 60%;
+            line-height: 1rem;
+            padding-top: 2.5rem;
+        }
+        &__modelo--seccion {
+            padding-top: 0.5rem;
+            font-size: 1em;
+        }
+        &__modelo--nombre {
+            font-size: 1.5em;
+            padding-top: 1rem;
+        }
+        &__modelo--precio {
+            font-size: 1.5em;
+        }
+        &__modelo--cuotas {
+            font-size: 1em;
+        }
+    }
+
+    span {
+        color: #f94144;
+        font-size: 0.9em;
+        text-decoration: line-through;
+    }
+
+    /*Section Video*/
+    .video {
+        &__titulo {
+            font-size: 1.6em;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        &__video {
+            width: 80%;
+        }
+    }
+
+    /*Section app*/
+    .app {
+        &__titulo {
+            font-size: 1.8em;
+            padding-top: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+        &__titulo--p {
+            font-size: 1.3em;
+            padding-bottom: 2rem;
+        }
+        &__imagen {
+            width: 80%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 830px) {
+    .carousel-item {
+        margin-top: 8rem;
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 836px) {
+    .carousel-item {
+        margin-top: 12rem;
+        padding-top: 5rem;
+    }
+}
+

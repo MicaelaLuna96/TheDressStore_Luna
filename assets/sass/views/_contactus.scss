@@ -1,0 +1,176 @@
+/*Contact section*/
+.contact {
+    color: $font-colorprimario;
+    background-color: $principal;
+    text-align: center;
+    &__logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+        padding: 1rem 1rem 0px 1rem;
+        list-style-type: none;
+    }
+    &__texto {
+        color: $font-colorprimario;
+        font-size: 1.8em;
+        font-weight: bold;
+        text-shadow: none;
+    }
+}
+
+/*Form section*/
+.form {
+    color: $font-colorprimario;
+    background-color: $principal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 4rem;
+    &__fielset {
+        background-color: $cuarto;
+        border-radius: 50px;
+        border: none;
+        width: 60%;
+        height: auto;
+        padding: 10rem 2rem 2rem 2rem;
+        margin: 2rem;
+        text-align: center;
+    }
+    &__fielset--decorativeline {
+        background-color: #7E7E7E;
+        height: 0.01px;
+        margin-bottom: 5rem;
+    }
+    &__fielset--input {
+        border: 1px solid #7E7E7E;
+        border-radius: 20px;
+        width: 40%;
+        height: auto;
+        font-size: 1.8em;
+        margin: 1rem;
+        padding: 1.5rem;
+        font-family: $font-principal;
+    }
+    &__fielset--textarea {
+        font-family: #000;
+        font-size: 1.8em;
+    }
+    &__fielset--selection {
+        font-family: $font-principal;
+        border: 1px solid #7E7E7E;
+        border-radius: 20px;
+        height: auto;
+        margin: 1.5rem 1.5rem 1.5rem 0rem;
+        font-size: 1.7em;
+        text-align: center;
+        margin-right: 7rem;
+    }
+    &__options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__fielset--texto {
+        font-size: 2em;
+        text-align: center;
+        margin-right: 1rem;
+    }
+    &__fielset--checkbox {
+        width: 15px;
+        height: 15px;
+    }
+    &__fielset--boton {
+        background-color: $principal;
+        border: none;
+        box-shadow: $text-shadow1;
+        border-radius: 20px;
+        font-size: 2em;
+        width: 20%;
+        height: auto;
+        padding: 1rem;
+        margin: 2rem 4rem;
+        color: #383737;
+        background-image: linear-gradient(to top, #968580, #9c8b86, #a3918c, #a99893, #b09e99);
+    }
+}
+
+@media screen and (max-width:767px){
+    /*Contact section*/
+    .contact {
+        &__logos {
+            display: flex;
+            justify-content: space-around;
+        }
+        &__texto {
+            font-size: 1.1em;
+            padding: 0 0.3rem;
+        }
+        &__logos--iconos {
+            width: 70%;
+        }
+    }
+
+     /*Form section*/
+    .form {
+        padding-bottom: 2rem;
+        &__fielset {
+            border-radius: 25px;
+            width: 60%;
+            padding: 4rem 1rem 1rem 1rem;
+            margin: 1rem;
+            text-align: center;
+        }
+        &__fielset--decorativeline {
+            background-color: #7E7E7E;
+            height: 0.001px;
+            margin-bottom: 3rem;
+        }
+        &__fielset--input {
+            border-radius: 20px;
+            width: 80%;
+            height: auto;
+            font-size: 1.1em;
+            margin: 1rem;
+            padding: 0.8rem;
+        }
+        &__fielset--textarea {
+            font-size: 1.1em;
+        }
+        &__options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        &__fielset--selection {
+            font-size: 1.1em;
+            padding-right: 0.8rem;
+            margin: 1rem 0rem;
+        }
+        &__fielset--selection {
+            font-size: 1.1em;
+            padding-right: 0.8rem;
+            margin: 1rem 0rem;
+        }
+        &__fielset--texto {
+            font-size: 1.1em;
+            padding-left: 0.3rem;
+        }
+        &__fielset--checkbox {
+            width: 8px;
+            height: 8px;
+            margin-left: 0.2rem;
+        }
+        &__fielset--boton {
+            font-size: 1.1em;
+            width: 35%;
+            padding: 1rem;
+            margin: 1.5rem 1rem;
+        }
+        &__wrap {
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+    }
+}
