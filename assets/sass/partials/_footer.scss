@@ -1,33 +1,33 @@
-
 /*Social media section*/
 .redes {
     background-color: $secundario;
     background-image: linear-gradient(to top, #968580, #af9d97, #c9b6af, #e3cfc8, #fee9e1);
     &__titulo {
         color: $font-colorprimario;
-        font-size: 2.2em;
+        font-size: map-get($fontsize, large);
         font-weight: bold;
         text-align: center;
         padding-top: 25px;
-        padding-bottom: 25px;
+        padding-bottom: 10px;
     }
+
     &__logos {
-        display: flex;
-        justify-content: space-evenly;
+        @include flex(0, space-evenly, 0, 0);
     }
+
     &__titulo--iconos {
+        @extend .zoom;
         list-style-type: none;
         padding-right: 1.9rem;
     }
 }
 
 /*Footer section*/
-
 .footer {
     &__logo {
         color: $font-colorsecundario;
         background-color: $terciario;
-        font-size: 3em;
+        font-size: map-get($fontsize, xlarge);
         font-weight: lighter;
         text-shadow: $text-shadow;
         text-align: center;
@@ -36,19 +36,19 @@
         color: $cuarto;
         background-color: $principal;
         text-align: center;
-        font-size: 1.5em;
+        font-size: map-get($fontsize, small);
     }
 }
 
 @media screen and (max-width:767px){
     /*Social media section*/
     .redes__titulo {
-        font-size: 1.5em;
+        font-size: map-get($fontsize, small);
         padding-top: 1.2rem;
         padding-bottom: 1rem;
         &__titulo--iconos {
-            width: 10px;
-            height: 20px;
+            width: 5px;
+            height: 10px;
             padding-bottom: 5rem;
             padding-right: 7rem;
         }
@@ -56,10 +56,10 @@
 
     .footer {
         &__logo {
-            font-size: 1.8em;
+            font-size: map-get($fontsize, medium);
         }
         &__p {
-            font-size: 0.9em;
+            font-size: map-get($fontsize, xsmall);
         }
     }
 }

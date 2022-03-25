@@ -6,20 +6,19 @@
         z-index: 100;
         width: 100%;
     }
+
     &__cuotas {
         color: $font-colorsecundario;
         background-color: $principal;
-        font-size: 1.3em;
+        font-size: map-get($fontsize, small);
         text-align: center;
         padding: 0.1rem;
     }
     &__nav {
         color: $font-colorsecundario;
         background-color: $terciario;
-        display: flex;
-        justify-content: space-evenly;
+        @include flex(row, space-evenly, flex-end, 0);
         flex-wrap: wrap;
-        align-items: flex-end;
         max-width: 100%;
         margin-top: -1rem;
     }
@@ -37,8 +36,9 @@
 .menu {
     flex-basis: 50%;
     justify-content: space-between;
-    font-size: 2.3em;
+    font-size: map-get($fontsize, large);
     align-items: baseline;
+    @include flex(row, space-evenly, flex-end, 0);
     &__item {
         text-shadow: $text-shadow;
         padding: 0.6rem;
@@ -48,7 +48,6 @@
     &__visita {
         color: $font-colorprimario;
         text-decoration: none;
-        font-size: 2.7rem;
     }
 }
 
@@ -62,7 +61,7 @@
     
     .header {
         &__cuotas {
-            font-size: 1.1em;
+            font-size: map-get($fontsize, xsmall);
         }
         &__nav {
             display: flex;
@@ -77,12 +76,10 @@
     }
 
     .menu {
-        font-size: 1.6em;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
+        font-size: map-get($fontsize, small);
+        @include flex(0, 0, center, 0);
+        flex-wrap: nowrap; 
         &__visita {
-            font-size: 1.8rem;
             text-decoration: none;
         }
         &__item {
