@@ -36,6 +36,7 @@ a {
 
 /*Boton wpp*/
 .boton__wpp {
+    @extend .zoom;
     position: fixed;
     z-index: 1000;
     bottom: 20px;
@@ -44,7 +45,7 @@ a {
     border-radius: 50%;
 }
 
-/*Animaciones*/
+/*Animaciones section*/
 .zoom {
     transition: transform .2s; 
     &:hover {

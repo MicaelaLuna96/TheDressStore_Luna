@@ -5,7 +5,7 @@
         color: $font-colorprimario;
         background-color: $secundario;
         box-shadow: $box-shadow;
-        font-size: 2.7em;
+        font-size: map-get($fontsize, xlarge);
         text-shadow: $text-shadow1;
         text-align: center;
         padding: 1.8rem;
@@ -20,6 +20,7 @@
         padding: 1rem;
     }
     &__modelo {
+        @extend .zoom;
         background-color: $cuarto;
         border: 1px solid #BFBFBF;
         border-radius: 5px;
@@ -34,25 +35,25 @@
         width: 75%;
     }
     &__modelo--seccion {
-        padding-top: 1.3rem;
-        font-size: 1.5em;
+        padding-top: 1rem;
+        font-size: map-get($fontsize, small);
     }
     &__modelo--nombre {
-        font-size: 2em;
+        font-size: map-get($fontsize, medium);
         font-weight: bold;
-        padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+        padding-top: 1.5rem;
     }
     &__modelo--precio {
-        font-size: 2em;
+        font-size: map-get($fontsize, medium);
     }
     &__modelo--cuotas {
-        font-size: 1.5em;
+        font-size: map-get($fontsize, small);
     }
 }
 
 span {
     color: #f94144;
-    font-size: 0.9em;
+    font-size: map-get($fontsize, xsmall);
     text-decoration: line-through;
 }
 
@@ -62,10 +63,10 @@ span {
     text-align: center;
     &__titulo {
         color: $font-colorprimario;
-        font-size: 2.5em;
+        font-size: map-get($fontsize, large);
         font-weight: bold;
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
     }
     &__video {
         background-color: $font-colorprimario;
@@ -82,14 +83,13 @@ span {
     text-align: center; 
     &__titulo {
         color: $font-colorprimario;
-        font-size: 2.5em;
+        font-size: map-get($fontsize, large);
         font-weight: bold; 
-        padding-top: 2.5rem;
+        padding-top: 2rem;
         padding-bottom: 1rem;
     }
     &__titulo--p {
-        font-size: 2em;
-        padding-bottom: 2rem;
+        font-size: map-get($fontsize, medium);
     }
     &__imagen {
         width: 35%;
@@ -110,7 +110,7 @@ span {
     .vestidos {
         padding: 1.5rem;
         &__titulo {
-            font-size: 1.7em;
+            font-size: map-get($fontsize, small);
             padding: 1rem;
             margin-bottom: 1rem;
             border-radius: 5px;
@@ -127,31 +127,31 @@ span {
             padding-top: 2.5rem;
         }
         &__modelo--seccion {
-            padding-top: 0.5rem;
-            font-size: 1em;
+            padding-top: 1rem;
+            font-size: map-get($fontsize, xsmall);
         }
         &__modelo--nombre {
-            font-size: 1.5em;
-            padding-top: 1rem;
+            font-size: map-get($fontsize, small);
+            padding-top: 0.5rem;
         }
         &__modelo--precio {
-            font-size: 1.5em;
+            font-size: map-get($fontsize, small);
         }
         &__modelo--cuotas {
-            font-size: 1em;
+            font-size: map-get($fontsize, xsmall);
         }
     }
 
     span {
         color: #f94144;
-        font-size: 0.9em;
+        font-size: map-get($fontsize, xsmall);
         text-decoration: line-through;
     }
 
     /*Section Video*/
     .video {
         &__titulo {
-            font-size: 1.6em;
+            font-size: map-get($fontsize, small);
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
@@ -163,13 +163,12 @@ span {
     /*Section app*/
     .app {
         &__titulo {
-            font-size: 1.8em;
+            font-size: map-get($fontsize, small);
             padding-top: 1.5rem;
             padding-bottom: 0.5rem;
         }
         &__titulo--p {
-            font-size: 1.3em;
-            padding-bottom: 2rem;
+            font-size: map-get($fontsize, sintermedio);
         }
         &__imagen {
             width: 80%;

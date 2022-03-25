@@ -1,11 +1,27 @@
 /*Variables*/
-$principal: #B09E99;
-$secundario: #FEE9E1;
-$terciario: #968580;
-$cuarto: #FFFFFF;
-$font-colorprimario: #383737;
-$font-colorsecundario: #FFFFFF;
-$font-principal: 'Raleway', sans-serif;
-$text-shadow: 0px 4px 4px #000000b3;
-$text-shadow1: 0px 4px 4px #00000040;
-$box-shadow: 5px 5px 30px #454545;
+    $principal: #B09E99;
+    $secundario: #FEE9E1;
+    $terciario: #968580;
+    $cuarto: #FFFFFF;
+    $font-colorprimario: #383737;
+    $font-colorsecundario: #FFFFFF;
+    $font-principal: 'Raleway', sans-serif;
+    $text-shadow: 0px 4px 4px #000000b3;
+    $text-shadow1: 0px 4px 4px #00000040;
+    $box-shadow: 5px 5px 30px #454545;
+
+
+    $fontsize: (
+        xsmall: 1em,
+        sintermedio: 1.3em,
+        small: 1.5em,
+        medium: 2em,
+        large: 2.5em,
+        xlarge: 3em
+    );
+    
+    @each $var, $val in $fontsize {
+        .fs-#{$var} {
+            font-size: #{$val};
+        }
+    }

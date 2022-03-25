@@ -4,10 +4,8 @@
     background-color: $principal;
     &__flex {
         padding-top: 1rem;
-        display: flex;
+        @include flex(0, space-evenly, center, 0);
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
     }
     &__tabla {
         border: solid 1rem #968580;
@@ -17,7 +15,7 @@
         width: 50%;
     }
     &__tabla--tr {
-        font-size: 2em;
+        font-size: map-get($fontsize, medium);
         line-height: 2.2;
         border: none;
     }
@@ -40,13 +38,12 @@
 /*Media queries*/
 @media screen and (max-width: 1200px) {
     .sizes__tabla--tr {
-        font-size: 1.6em;
+        font-size: map-get($fontsize, small);
         line-height: 2;
         border: none;
     }
 }
 @media screen and (max-width:767px){
-
 
     /*Sizes section*/
     .sizes {
@@ -58,7 +55,7 @@
             width: 100%;
         }
         &__tabla--tr {
-            font-size: 1.1em;
+            font-size: map-get($fontsize, xsmall);
             line-height: 1.5;
             text-align: center;
         }
