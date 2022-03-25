@@ -1,23 +1,21 @@
 /*Contact section*/
 .contact {
-    @extend .vestidos;
     color: $font-colorprimario;
     background-color: $principal;
     text-align: center;
     &__logos {
-        @include flex(0, space-evenly, baseline, 0);
+        display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
         padding: 1rem 1rem 0px 1rem;
         list-style-type: none;
     }
     &__texto {
         color: $font-colorprimario;
-        font-size: map-get($fontsize, medium);
+        font-size: 1.8em;
         font-weight: bold;
         text-shadow: none;
-    }
-    &__logos--iconos {
-        @extend .zoom;
     }
 }
 
@@ -25,8 +23,9 @@
 .form {
     color: $font-colorprimario;
     background-color: $principal;
-    @include flex(0, center, 0, 0);
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 4rem;
     &__fielset {
         background-color: $cuarto;
@@ -48,15 +47,14 @@
         border-radius: 20px;
         width: 40%;
         height: auto;
-        font-size: map-get($fontsize, medium);
+        font-size: 1.8em;
         margin: 1rem;
         padding: 1.5rem;
         font-family: $font-principal;
     }
     &__fielset--textarea {
-        @extend .form__fielset--input;
         font-family: #000;
-        font-size: map-get($fontsize, medium);
+        font-size: 1.8em;
     }
     &__fielset--selection {
         font-family: $font-principal;
@@ -64,15 +62,17 @@
         border-radius: 20px;
         height: auto;
         margin: 1.5rem 1.5rem 1.5rem 0rem;
-        font-size: map-get($fontsize, medium);
+        font-size: 1.7em;
         text-align: center;
         margin-right: 7rem;
     }
     &__options {
-        @include flex(0, center, baseline, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &__fielset--texto {
-        font-size: map-get($fontsize, medium);
+        font-size: 2em;
         text-align: center;
         margin-right: 1rem;
     }
@@ -81,17 +81,16 @@
         height: 15px;
     }
     &__fielset--boton {
-        @extend .zoom;
         background-color: $principal;
         border: none;
         box-shadow: $text-shadow1;
         border-radius: 20px;
-        font-size: map-get($fontsize, medium);
+        font-size: 2em;
         width: 20%;
         height: auto;
         padding: 1rem;
         margin: 2rem 4rem;
-        color: #000;
+        color: #383737;
         background-image: linear-gradient(to top, #968580, #9c8b86, #a3918c, #a99893, #b09e99);
     }
 }
@@ -100,10 +99,11 @@
     /*Contact section*/
     .contact {
         &__logos {
-            @include flex(0, space-around, 0, 0);
+            display: flex;
+            justify-content: space-around;
         }
         &__texto {
-            font-size: map-get($fontsize, xsmall);
+            font-size: 1.1em;
             padding: 0 0.3rem;
         }
         &__logos--iconos {
@@ -130,29 +130,31 @@
             border-radius: 20px;
             width: 80%;
             height: auto;
-            font-size: map-get($fontsize, xsmall);
+            font-size: 1.1em;
             margin: 1rem;
             padding: 0.8rem;
         }
         &__fielset--textarea {
-            font-size: map-get($fontsize, xsmall);
+            font-size: 1.1em;
         }
         &__options {
-            @include flex(0, center, center, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
         }
         &__fielset--selection {
-            font-size: map-get($fontsize, xsmall);
+            font-size: 1.1em;
             padding-right: 0.8rem;
             margin: 1rem 0rem;
         }
         &__fielset--selection {
-            font-size: map-get($fontsize, xsmall);
+            font-size: 1.1em;
             padding-right: 0.8rem;
             margin: 1rem 0rem;
         }
         &__fielset--texto {
-            font-size: map-get($fontsize, xsmall);
+            font-size: 1.1em;
             padding-left: 0.3rem;
         }
         &__fielset--checkbox {
@@ -161,7 +163,7 @@
             margin-left: 0.2rem;
         }
         &__fielset--boton {
-            font-size: map-get($fontsize, xsmall);
+            font-size: 1.1em;
             width: 35%;
             padding: 1rem;
             margin: 1.5rem 1rem;

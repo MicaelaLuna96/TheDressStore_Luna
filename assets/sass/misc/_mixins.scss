@@ -4,11 +4,7 @@
     margin: 0 auto;
 }
 
-
-@mixin flex($direction, $justify, $align, $gap) {
+.flex-row {
     display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-    gap: $gap;
+    flex-direction: row;
 }

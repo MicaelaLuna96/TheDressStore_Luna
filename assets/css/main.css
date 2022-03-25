@@ -1,23 +1,5 @@
 /*Variables*/
 /*Variables*/
-.fs-xsmall {
-  font-size: 1em; }
-
-.fs-sintermedio {
-  font-size: 1.3em; }
-
-.fs-small {
-  font-size: 1.5em; }
-
-.fs-medium {
-  font-size: 2em; }
-
-.fs-large {
-  font-size: 2.5em; }
-
-.fs-xlarge {
-  font-size: 3em; }
-
 /*Globales*/
 /*Normalize*/
 *,
@@ -57,16 +39,20 @@ a {
   background-color: #25D366;
   border-radius: 50%; }
 
-/*Animaciones section*/
-.zoom, .boton__wpp, .redes__titulo--iconos, .vestidos__modelo, .contact__logos--iconos, .form__fielset--boton {
+/*Animaciones*/
+.zoom {
   transition: transform .2s; }
-  .zoom:hover, .boton__wpp:hover, .redes__titulo--iconos:hover, .vestidos__modelo:hover, .contact__logos--iconos:hover, .form__fielset--boton:hover {
+  .zoom:hover {
     transform: scale(1.05); }
 
 /*Helpers*/
 .container {
   max-width: 1200px;
   margin: 0 auto; }
+
+.flex-row {
+  display: flex;
+  flex-direction: row; }
 
 /*Partials*/
 .header {
@@ -79,18 +65,16 @@ a {
   .header__cuotas {
     color: #FFFFFF;
     background-color: #B09E99;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
     padding: 0.1rem; }
   .header__nav {
     color: #FFFFFF;
     background-color: #968580;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    align-items: flex-end;
-    gap: 0;
     flex-wrap: wrap;
+    align-items: flex-end;
     max-width: 100%;
     margin-top: -1rem; }
   .header__portada {
@@ -104,13 +88,8 @@ a {
 .menu {
   flex-basis: 50%;
   justify-content: space-between;
-  font-size: 2.5em;
-  align-items: baseline;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  gap: 0; }
+  font-size: 2.3em;
+  align-items: baseline; }
   .menu__item {
     text-shadow: 0px 4px 4px #000000b3;
     padding: 0.6rem;
@@ -118,7 +97,8 @@ a {
     white-space: nowrap; }
   .menu__visita {
     color: #383737;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 2.7rem; }
 
 .carousel-item {
   margin-top: 10rem;
@@ -127,7 +107,7 @@ a {
 /*Media queries*/
 @media screen and (max-width: 767px) {
   .header__cuotas {
-    font-size: 1em; }
+    font-size: 1.1em; }
   .header__nav {
     display: flex;
     flex-wrap: wrap;
@@ -136,14 +116,12 @@ a {
     padding: 1rem;
     width: 70%; }
   .menu {
-    font-size: 1.5em;
+    font-size: 1.6em;
     display: flex;
-    flex-direction: 0;
-    justify-content: 0;
-    align-items: center;
-    gap: 0;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    align-items: center; }
     .menu__visita {
+      font-size: 1.8rem;
       text-decoration: none; }
     .menu__item {
       padding: 0.5rem;
@@ -156,17 +134,14 @@ a {
   background-image: linear-gradient(to top, #968580, #af9d97, #c9b6af, #e3cfc8, #fee9e1); }
   .redes__titulo {
     color: #383737;
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
     text-align: center;
     padding-top: 25px;
-    padding-bottom: 10px; }
+    padding-bottom: 25px; }
   .redes__logos {
     display: flex;
-    flex-direction: 0;
-    justify-content: space-evenly;
-    align-items: 0;
-    gap: 0; }
+    justify-content: space-evenly; }
   .redes__titulo--iconos {
     list-style-type: none;
     padding-right: 1.9rem; }
@@ -193,24 +168,24 @@ a {
     padding-top: 1.2rem;
     padding-bottom: 1rem; }
     .redes__titulo__titulo--iconos {
-      width: 5px;
-      height: 10px;
+      width: 10px;
+      height: 20px;
       padding-bottom: 5rem;
       padding-right: 7rem; }
   .footer__logo {
-    font-size: 2em; }
+    font-size: 1.8em; }
   .footer__p {
-    font-size: 1em; } }
+    font-size: 0.9em; } }
 
 /*Views*/
-.vestidos, .contact {
+.vestidos {
   background: #B09E99;
   padding: 4rem; }
   .vestidos__titulo {
     color: #383737;
     background-color: #FEE9E1;
     box-shadow: 5px 5px 30px #454545;
-    font-size: 3em;
+    font-size: 2.7em;
     text-shadow: 0px 4px 4px #00000040;
     text-align: center;
     padding: 1.8rem;
@@ -235,12 +210,12 @@ a {
   .vestidos__modelo--foto {
     width: 75%; }
   .vestidos__modelo--seccion {
-    padding-top: 1rem;
+    padding-top: 1.3rem;
     font-size: 1.5em; }
   .vestidos__modelo--nombre {
     font-size: 2em;
     font-weight: bold;
-    padding-top: 1.5rem; }
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem; }
   .vestidos__modelo--precio {
     font-size: 2em; }
   .vestidos__modelo--cuotas {
@@ -248,7 +223,7 @@ a {
 
 span {
   color: #f94144;
-  font-size: 1em;
+  font-size: 0.9em;
   text-decoration: line-through; }
 
 /*Video section*/
@@ -259,8 +234,8 @@ span {
     color: #383737;
     font-size: 2.5em;
     font-weight: bold;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem; }
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; }
   .video__video {
     background-color: #383737;
     border: solid 1rem #B09E99;
@@ -276,10 +251,11 @@ span {
     color: #383737;
     font-size: 2.5em;
     font-weight: bold;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     padding-bottom: 1rem; }
   .app__titulo--p {
-    font-size: 2em; }
+    font-size: 2em;
+    padding-bottom: 2rem; }
   .app__imagen {
     width: 35%; }
 
@@ -291,10 +267,10 @@ span {
     justify-items: center; } }
 
 @media screen and (max-width: 767px) {
-  .vestidos, .contact {
+  .vestidos {
     padding: 1.5rem; }
     .vestidos__titulo {
-      font-size: 1.5em;
+      font-size: 1.7em;
       padding: 1rem;
       margin-bottom: 1rem;
       border-radius: 5px; }
@@ -308,33 +284,34 @@ span {
       line-height: 1rem;
       padding-top: 2.5rem; }
     .vestidos__modelo--seccion {
-      padding-top: 1rem;
+      padding-top: 0.5rem;
       font-size: 1em; }
     .vestidos__modelo--nombre {
       font-size: 1.5em;
-      padding-top: 0.5rem; }
+      padding-top: 1rem; }
     .vestidos__modelo--precio {
       font-size: 1.5em; }
     .vestidos__modelo--cuotas {
       font-size: 1em; }
   span {
     color: #f94144;
-    font-size: 1em;
+    font-size: 0.9em;
     text-decoration: line-through; }
   /*Section Video*/
   .video__titulo {
-    font-size: 1.5em;
+    font-size: 1.6em;
     padding-top: 1rem;
     padding-bottom: 1rem; }
   .video__video {
     width: 80%; }
   /*Section app*/
   .app__titulo {
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding-top: 1.5rem;
     padding-bottom: 0.5rem; }
   .app__titulo--p {
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    padding-bottom: 2rem; }
   .app__imagen {
     width: 80%; } }
 
@@ -355,11 +332,9 @@ span {
   .sizes__flex {
     padding-top: 1rem;
     display: flex;
-    flex-direction: 0;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 0;
-    flex-wrap: wrap; }
+    justify-content: space-evenly; }
   .sizes__tabla {
     border: solid 1rem #968580;
     border-radius: 5px;
@@ -383,7 +358,7 @@ span {
 /*Media queries*/
 @media screen and (max-width: 1200px) {
   .sizes__tabla--tr {
-    font-size: 1.5em;
+    font-size: 1.6em;
     line-height: 2;
     border: none; } }
 
@@ -395,7 +370,7 @@ span {
     border: solid 0.5rem #968580;
     width: 100%; }
   .sizes__tabla--tr {
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.5;
     text-align: center; }
   .sizes__imagen--manequin {
@@ -408,16 +383,14 @@ span {
   text-align: center; }
   .contact__logos {
     display: flex;
-    flex-direction: 0;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: baseline;
-    gap: 0;
-    flex-wrap: wrap;
     padding: 1rem 1rem 0px 1rem;
     list-style-type: none; }
   .contact__texto {
     color: #383737;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
     text-shadow: none; }
 
@@ -426,11 +399,8 @@ span {
   color: #383737;
   background-color: #B09E99;
   display: flex;
-  flex-direction: 0;
-  justify-content: center;
-  align-items: 0;
-  gap: 0;
   flex-wrap: wrap;
+  justify-content: center;
   padding-bottom: 4rem; }
   .form__fielset {
     background-color: #FFFFFF;
@@ -445,33 +415,31 @@ span {
     background-color: #7E7E7E;
     height: 0.01px;
     margin-bottom: 5rem; }
-  .form__fielset--input, .form__fielset--textarea {
+  .form__fielset--input {
     border: 1px solid #7E7E7E;
     border-radius: 20px;
     width: 40%;
     height: auto;
-    font-size: 2em;
+    font-size: 1.8em;
     margin: 1rem;
     padding: 1.5rem;
     font-family: "Raleway", sans-serif; }
   .form__fielset--textarea {
     font-family: #000;
-    font-size: 2em; }
+    font-size: 1.8em; }
   .form__fielset--selection {
     font-family: "Raleway", sans-serif;
     border: 1px solid #7E7E7E;
     border-radius: 20px;
     height: auto;
     margin: 1.5rem 1.5rem 1.5rem 0rem;
-    font-size: 2em;
+    font-size: 1.7em;
     text-align: center;
     margin-right: 7rem; }
   .form__options {
     display: flex;
-    flex-direction: 0;
     justify-content: center;
-    align-items: baseline;
-    gap: 0; }
+    align-items: center; }
   .form__fielset--texto {
     font-size: 2em;
     text-align: center;
@@ -489,19 +457,16 @@ span {
     height: auto;
     padding: 1rem;
     margin: 2rem 4rem;
-    color: #000;
+    color: #383737;
     background-image: linear-gradient(to top, #968580, #9c8b86, #a3918c, #a99893, #b09e99); }
 
 @media screen and (max-width: 767px) {
   /*Contact section*/
   .contact__logos {
     display: flex;
-    flex-direction: 0;
-    justify-content: space-around;
-    align-items: 0;
-    gap: 0; }
+    justify-content: space-around; }
   .contact__texto {
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 0 0.3rem; }
   .contact__logos--iconos {
     width: 70%; }
@@ -518,39 +483,37 @@ span {
       background-color: #7E7E7E;
       height: 0.001px;
       margin-bottom: 3rem; }
-    .form__fielset--input, .form__fielset--textarea {
+    .form__fielset--input {
       border-radius: 20px;
       width: 80%;
       height: auto;
-      font-size: 1em;
+      font-size: 1.1em;
       margin: 1rem;
       padding: 0.8rem; }
     .form__fielset--textarea {
-      font-size: 1em; }
+      font-size: 1.1em; }
     .form__options {
       display: flex;
-      flex-direction: 0;
       justify-content: center;
       align-items: center;
-      gap: 0;
       flex-wrap: wrap; }
     .form__fielset--selection {
-      font-size: 1em;
+      font-size: 1.1em;
       padding-right: 0.8rem;
       margin: 1rem 0rem; }
     .form__fielset--selection {
-      font-size: 1em;
+      font-size: 1.1em;
       padding-right: 0.8rem;
       margin: 1rem 0rem; }
     .form__fielset--texto {
-      font-size: 1em;
+      font-size: 1.1em;
       padding-left: 0.3rem; }
     .form__fielset--checkbox {
       width: 8px;
       height: 8px;
       margin-left: 0.2rem; }
     .form__fielset--boton {
-      font-size: 1em;
+      font-size: 1.1em;
       width: 35%;
       padding: 1rem;
       margin: 1.5rem 1rem; }
