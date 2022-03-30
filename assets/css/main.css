@@ -124,6 +124,17 @@ a {
   margin-top: 10rem;
   padding-top: 2rem; }
 
+.carrito {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  top: 30px;
+  right: 30px;
+  font-size: 1.5em;
+  text-shadow: 0px 4px 4px #000000b3; }
+  .carrito__buscar {
+    margin-right: 3rem; }
+
 /*Media queries*/
 @media screen and (max-width: 767px) {
   .header__cuotas {
@@ -134,6 +145,7 @@ a {
     text-align: center; }
   .logo {
     padding: 1rem;
+    padding-top: 3rem;
     width: 70%; }
   .menu {
     font-size: 1.5em;
@@ -148,7 +160,13 @@ a {
     .menu__item {
       padding: 0.5rem;
       text-align: center;
-      margin: 0 1rem; } }
+      margin: 0 1rem; }
+  .carrito {
+    top: 20px;
+    right: 10px;
+    font-size: 1.3em; }
+    .carrito__buscar {
+      margin-right: 1.5rem; } }
 
 /*Social media section*/
 .redes {
@@ -168,8 +186,7 @@ a {
     align-items: 0;
     gap: 0; }
   .redes__titulo--iconos {
-    list-style-type: none;
-    padding-right: 1.9rem; }
+    list-style-type: none; }
 
 /*Footer section*/
 .footer__logo {
@@ -214,7 +231,6 @@ a {
     text-shadow: 0px 4px 4px #00000040;
     text-align: center;
     padding: 1.8rem;
-    margin-bottom: 3rem;
     border-radius: 5px;
     font-weight: bold; }
   .vestidos__conteiner {
@@ -234,9 +250,6 @@ a {
     line-height: 1.5rem; }
   .vestidos__modelo--foto {
     width: 75%; }
-  .vestidos__modelo--seccion {
-    padding-top: 1rem;
-    font-size: 1.5em; }
   .vestidos__modelo--nombre {
     font-size: 2em;
     font-weight: bold;
@@ -249,7 +262,8 @@ a {
 span {
   color: #f94144;
   font-size: 1em;
-  text-decoration: line-through; }
+  text-decoration: line-through;
+  margin-right: 1.5rem; }
 
 /*Video section*/
 .video {
@@ -296,7 +310,6 @@ span {
     .vestidos__titulo {
       font-size: 1.5em;
       padding: 1rem;
-      margin-bottom: 1rem;
       border-radius: 5px; }
     .vestidos__conteiner {
       display: grid;
@@ -307,12 +320,9 @@ span {
       width: 60%;
       line-height: 1rem;
       padding-top: 2.5rem; }
-    .vestidos__modelo--seccion {
-      padding-top: 1rem;
-      font-size: 1em; }
     .vestidos__modelo--nombre {
       font-size: 1.5em;
-      padding-top: 0.5rem; }
+      padding-top: 1rem; }
     .vestidos__modelo--precio {
       font-size: 1.5em; }
     .vestidos__modelo--cuotas {
@@ -531,7 +541,7 @@ span {
       display: flex;
       flex-direction: 0;
       justify-content: center;
-      align-items: center;
+      align-items: baseline;
       gap: 0;
       flex-wrap: wrap; }
     .form__fielset--selection {

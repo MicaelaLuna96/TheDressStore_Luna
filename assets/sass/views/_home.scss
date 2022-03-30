@@ -9,7 +9,6 @@
         text-shadow: $text-shadow1;
         text-align: center;
         padding: 1.8rem;
-        margin-bottom: 3rem;
         border-radius: 5px;
         font-weight: bold;
     }
@@ -34,10 +33,6 @@
     &__modelo--foto {
         width: 75%;
     }
-    &__modelo--seccion {
-        padding-top: 1rem;
-        font-size: map-get($fontsize, small);
-    }
     &__modelo--nombre {
         font-size: map-get($fontsize, medium);
         font-weight: bold;
@@ -55,6 +50,7 @@ span {
     color: #f94144;
     font-size: map-get($fontsize, xsmall);
     text-decoration: line-through;
+    margin-right: 1.5rem;
 }
 
 /*Video section*/
@@ -112,7 +108,6 @@ span {
         &__titulo {
             font-size: map-get($fontsize, small);
             padding: 1rem;
-            margin-bottom: 1rem;
             border-radius: 5px;
         }
         &__conteiner {
@@ -126,13 +121,9 @@ span {
             line-height: 1rem;
             padding-top: 2.5rem;
         }
-        &__modelo--seccion {
-            padding-top: 1rem;
-            font-size: map-get($fontsize, xsmall);
-        }
         &__modelo--nombre {
             font-size: map-get($fontsize, small);
-            padding-top: 0.5rem;
+            padding-top: 1rem;
         }
         &__modelo--precio {
             font-size: map-get($fontsize, small);

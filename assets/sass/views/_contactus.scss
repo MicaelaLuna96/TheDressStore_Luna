@@ -138,7 +138,7 @@
             font-size: map-get($fontsize, xsmall);
         }
         &__options {
-            @include flex(0, center, center, 0);
+            @include flex(0, center, baseline, 0);
             flex-wrap: wrap;
         }
         &__fielset--selection {

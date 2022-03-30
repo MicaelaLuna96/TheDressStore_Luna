@@ -56,6 +56,19 @@
     padding-top: 2rem;
 }
 
+.carrito {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    top: 30px;
+    right: 30px;
+    font-size: map-get($fontsize, small);
+    text-shadow: $text-shadow;
+    &__buscar {
+        margin-right: 3rem;
+}
+}
+
 /*Media queries*/
 @media screen and (max-width:767px){
     
@@ -72,6 +85,7 @@
 
     .logo {
         padding: 1rem;
+        padding-top: 3rem;
         width: 70%;
     }
 
@@ -87,5 +101,13 @@
             text-align: center;
             margin: 0 1rem;
         }
+    }
+    .carrito {
+        top: 20px;
+        right: 10px;
+        font-size: map-get($fontsize, sintermedio);
+        &__buscar {
+            margin-right: 1.5rem;
+    }
     }
 }
