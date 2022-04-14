@@ -53,6 +53,7 @@
         &__tabla {
             border: solid 0.5rem #968580;
             width: 100%;
+            margin-top: 1.5rem;
         }
         &__tabla--tr {
             font-size: map-get($fontsize, xsmall);

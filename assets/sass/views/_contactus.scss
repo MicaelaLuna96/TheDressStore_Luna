@@ -9,6 +9,7 @@
         flex-wrap: wrap;
         padding: 1rem 1rem 0px 1rem;
         list-style-type: none;
+        margin-top: 5rem;
     }
     &__texto {
         color: $font-colorprimario;
@@ -101,6 +102,7 @@
     .contact {
         &__logos {
             @include flex(0, space-around, 0, 0);
+            margin-top: 2rem;
         }
         &__texto {
             font-size: map-get($fontsize, xsmall);
